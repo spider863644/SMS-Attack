@@ -18,7 +18,7 @@ apt install git
 
 apt install pip
 
-git clone https://github.com/spider864644/SMS-Attack
+git clone https://github.com/spider863644/SMS-Attack
 
 pip install -r requirements.txt
 
@@ -38,7 +38,7 @@ sudo apt install git
 
 sudo apt install pip
 
-git clone https://github.com/spider864644/SMS-Attack
+git clone https://github.com/spider863644/SMS-Attack
 
 sudo pip install -r requirements.txt
 
