@@ -7,17 +7,17 @@ You can only send 1 sms daily
 
 ## How to Install on termux
 ```
-apt update && apt upgrade<br><br>
+apt update && apt upgrade
 
-apt install python3<br><br>
+apt install python3
 
-apt install git<br><br>
+apt install git
 
-apt install pip<br><br>
+apt install pip
 
-git clone https://github.com/spider864644/SMS-Attack<br><br>
+git clone https://github.com/spider864644/SMS-Attack
 
-pip install -r requirements.txt<br><br>
+pip install -r requirements.txt
 
 python3 sms.py
 
@@ -29,15 +29,15 @@ python3 sms.py
 
 sudo apt update && apt upgrade<br><br>
 
-sudo apt install python3<br><br>
+sudo apt install python3
 
-sudo apt install git<br><br>
+sudo apt install git
 
-sudo apt install pip<br><br>
+sudo apt install pip
 
-git clone https://github.com/spider864644/SMS-Attack<br><br>
+git clone https://github.com/spider864644/SMS-Attack
 
-sudo pip install -r requirements.txt<br><br>
+sudo pip install -r requirements.txt
 
 python3 sms.py
 
