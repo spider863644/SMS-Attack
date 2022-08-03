@@ -30,7 +30,7 @@ python3 sms.py
 
 ```
 
-sudo apt update && apt upgrade<br><br>
+sudo apt update && apt upgrade
 
 sudo apt install python3
 
