@@ -5,6 +5,9 @@ It was created by TheNooB and Spider Anongreyhat<br>
 ## Note:
 You can only send 1 sms daily
 
+## Screenshot
+<img src="sms_attack.jpg alt="Image not available">
+
 ## How to Install on termux
 ```
 apt update && apt upgrade
