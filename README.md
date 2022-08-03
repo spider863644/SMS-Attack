@@ -6,7 +6,7 @@ It was created by TheNooB and Spider Anongreyhat<br>
 You can only send 1 sms daily
 
 ## Screenshot
-<img src="sms_attack.jpg" alt="Image not available">
+<img src="sms-attack.jpg" alt="Image not available">
 
 ## How to Install on termux
 ```
