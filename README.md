@@ -52,9 +52,11 @@ If you are finding it difficult to send sms, just connect to a strong VPN and sw
 Spider Anongreyhat</b>
 
 ## Support this project by:
+<b>
 Following me on github<br>
 Giving the project a star<br>
 Folk this project<br>
 Sharing this project<br>
 Report any bugs you found
 
+</b>
