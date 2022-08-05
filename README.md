@@ -20,6 +20,8 @@ apt install pip
 
 git clone https://github.com/spider863644/SMS-Attack
 
+cd SMS-Tracker
+
 pip install -r requirements.txt
 
 python3 sms.py
@@ -39,6 +41,8 @@ sudo apt install git
 sudo apt install pip
 
 git clone https://github.com/spider863644/SMS-Attack
+
+cd SMS-Tracker
 
 sudo pip install -r requirements.txt
 
