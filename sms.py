@@ -1,27 +1,34 @@
-import requests
-import json
-#try:
-#    from infobip_api_client.api_client import ApiClient, Configuration
-#except:
-#    print(Fore.RED + "Error: \nSome requirements are missing\n\nRun pip install -r requirements.txt")
-#    t.sleep(1)
-#    exit()
-#from infobip_api_client.model.sms_advanced_textual_request import SmsAdvancedTextualRequest
-#from infobip_api_client.model.sms_destination import SmsDestination
-#from infobip_api_client.model.sms_response import SmsResponse
-#from infobip_api_client.model.sms_textual_message import SmsTextualMessage
-#from infobip_api_client.api.send_sms_api import SendSmsApi
-#from infobip_api_client.exceptions import ApiException
-import os, pyfiglet
-import time as t
-import colorama
-from colorama import *
-colorama.init(autoreset=True)
+
+try:
+   
+    from infobip_api_client.api_client import ApiClient, Configuration
+except:
+    print("Error: \nSome requirements are missing\n\nRun pip install -r requirements.txt")
+    exit()
+from infobip_api_client.model.sms_advanced_textual_request import SmsAdvancedTextualRequest
+from infobip_api_client.model.sms_destination import SmsDestination
+from infobip_api_client.model.sms_response import SmsResponse
+from infobip_api_client.model.sms_textual_message import SmsTextualMessage
+from infobip_api_client.api.send_sms_api import SendSmsApi
+from infobip_api_client.exceptions import ApiException
+try:
+    import phonenumbers
+    import os, pyfiglet
+    import datetime
+    import time as t
+    import colorama
+    from colorama import *
+    colorama.init(autoreset=True)
+    import requests
+    import json
+except:
+    print("Some requirements are missing\nRun pip install -r requirements. txt")
+    exit()
 header = pyfiglet.figlet_format("SMS -Attack")
 def loop():
     os.system ("clear")
     print(Fore.GREEN + header)
-    print(Fore.RED + "Version 1.0".center(70))
+    print(Fore.RED + "Version 1.1".center(70))
     print(Fore.CYAN + """
   Coded by: Spider Anongreyhat & TheNooB
   Team: TermuxHackz Society
@@ -48,10 +55,19 @@ def loop():
             print (Fore.RED + "\nError:\nI told you not to add country code, you fool 🙄🙄\n\n\n\n")
             t.sleep(3)
             free_trial()
+        pa = phonenumbers.parse(country_code + phone_number)
+        Phone_Number = phonenumbers.is_valid_number(pa)
+        if Phone_Number is True:
+            pass
+        else:
+            print(Fore.RED + str(pa) + " is not a valid number")
+            t.sleep(3.5)
+            loop()
+        
         message = input (Fore.GREEN + "\n\nBuild your scam letter" + Fore.CYAN + "[Note: Letters are not in html format] \n Type your messages: " + Fore.YELLOW)
         number = country_code + phone_number
         resp = requests.post('https://textbelt.com/text', {
-        'from': 'M&T ALERT', 
+     
           'phone': country_code + phone_number,
           'message': message,
           'key': 'textbelt',
@@ -93,26 +109,26 @@ def loop():
             print("Error occurred while trying to send SMS message.")
             print(ex)
             
-  #  print(Fore.GREEN + """
-#Choose a version to use
-#[1] Free Version
-#[2] Paid Version
-#""")
-#    version = input(Fore.YELLOW + " Choose a version: " + Fore.CYAN)
-#    if version == "1":
-#        free_trial()
-#    elif version == "2":
-#        activation_code = input(Fore.BLUE + "Enter activation Code: " + Fore.BLACK)
-#        if activation_code  != "TheNooB":
-#            print(Fore.RED + " Incorrect activation code!\nContacting the owner for activation code in five seconds")
-#            t.sleep(5.5)
-#            os.system ("xdg-open https://wa.me/+2349052863644")
-#            loop()
-#        else:
-#            paid()
+    print(Fore.GREEN + """
+Choose a version to use
+[1] Free Version
+[2] Paid Version
+""")
+    version = input(Fore.YELLOW + " Choose a version: " + Fore.CYAN)
+    if version == "1":
+        free_trial()
+    elif version == "2":
+        activation_code = input(Fore.BLUE + "Enter activation Code: " + Fore.BLACK)
+        if activation_code  != "TheNooB":
+            print(Fore.RED + " Incorrect activation code!\nContacting the owner for activation code in five seconds")
+            t.sleep(5.5)
+            os.system ("xdg-open https://wa.me/+2349052863644")
+            loop()
+        else:
+            paid()
 
 
-    free_trial()
+    
     con = input((Fore.GREEN + "Do you wanna continue?[Y/N]: " + Fore.YELLOW)) 
     if con == "y" or con == "Y":
         loop()
