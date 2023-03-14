@@ -1,4 +1,9 @@
-
+import urllib.parse
+try:
+    import urllib.request
+except:
+    os.system("pip install --upgrade pip")
+    os.system("pip install urllib2")
 try:
    
     from infobip_api_client.api_client import ApiClient, Configuration
@@ -52,7 +57,7 @@ header = """
 def loop():
     os.system ("clear")
     print(Fore.GREEN + header)
-    print(Fore.RED + "Version 1.1".center(70))
+    print(Fore.RED + "Version 1.2".center(70))
     print(Fore.CYAN + """
   Coded by: Spider Anongreyhat & TheNooB
   Team: TermuxHackz Society
@@ -146,7 +151,9 @@ Choose a version to use
         if activation_code  != "TheNooB":
             print(Fore.RED + " Incorrect activation code!\nContacting the owner for activation code in five seconds")
             t.sleep(5.5)
-            os.system ("xdg-open https://wa.me/+2349052863644")
+            mess = {'text' : """Hello Spider, please i need sms attack activation code"""}
+            data = urllib.parse.urlencode(mess)
+            os.system ("xdg-open https://wa.me/+2349052863644?" + data)
             loop()
         else:
             paid()
