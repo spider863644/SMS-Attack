@@ -1,6 +1,4 @@
 colorama
-pyfiglet
 requests
-json
 phonenumbers
 infobip-api-python-client
