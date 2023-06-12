@@ -1,6 +1,6 @@
 # SMS-Attack
 A social engineering toolkit for performing smishing, and other sms attacks. <br>
-It was created by TheNooB and Spider Anongreyhat<br>
+It was created by TheNooB and Spider Anongreyhat with a contibution by CamoCatX<br>
 
 ## Note:
 You can only send 1 sms daily
@@ -10,44 +10,25 @@ You can only send 1 sms daily
 
 ## How to Install on termux
 ```
-apt update && apt upgrade
-
-apt install python3
-
-apt install git
-
-apt install pip
-
-git clone https://github.com/spider863644/SMS-Attack
-
-cd SMS-Attack
-
-pip install -r requirements.txt
-
-python3 sms.py
-
+sudo apt update && sudo apt upgrade && sudo apt install python3 git python3-pip && git clone https://github.com/spider863644/SMS-Attack && cd SMS-Attack && sudo pip install -r requirements.txt && python3 sms.py
 ```
 
-## How to install on Linux
+## How to install on Debian-based linux distros (like Kali Linux)
 
 ```
-
-sudo apt update && apt upgrade
-
-sudo apt install python3
-
-sudo apt install git
-
-sudo apt install pip
-
-git clone https://github.com/spider863644/SMS-Attack
-
-cd SMS-Attack
-
-sudo pip install -r requirements.txt
-
-python3 sms.py
-
+sudo apt update && sudo apt upgrade && sudo apt install python3 git python3-pip && git clone https://github.com/spider863644/SMS-Attack && cd SMS-Attack && sudo pip install -r requirements.txt && python3 sms.py
+```
+## How to install on Arch-based linux distros (like Blackarch)
+```
+sudo pacman -Syu && sudo pacman -S python git python-pip && git clone https://github.com/spider863644/SMS-Attack && cd SMS-Attack && sudo pip install -r requirements.txt && python sms.py
+```
+## How to install on Gentoo-based distros (like Pentoo)
+```
+sudo emerge --sync && sudo emerge -u python git dev-python/pip && git clone https://github.com/spider863644/SMS-Attack && cd SMS-Attack && sudo pip install -r requirements.txt && python sms.py
+```
+## How to install on Fedora-based distros (like Fedora Security Lab) 
+```
+sudo dnf update && sudo dnf install python3 git python3-pip -y && git clone https://github.com/spider863644/SMS-Attack && cd SMS-Attack && sudo pip3 install -r requirements.txt && python3 sms.py
 ```
 
 ### Important Note
@@ -56,7 +37,8 @@ If you are finding it difficult to send sms, just connect to a strong VPN and sw
 
 ### Credit goes to:
 <b>TheNooB<br>
-Spider Anongreyhat</b>
+Spider Anongreyhat
+<br>CamoCatX</b>
 
 ## Support this project by:
 <b>
