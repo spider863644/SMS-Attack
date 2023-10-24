@@ -59,7 +59,7 @@ def loop():
     print(Fore.GREEN + header)
     print(Fore.RED + "Version 1.2".center(70))
     print(Fore.CYAN + """
-  Coded by: Spider Anongreyhat & TheNooB
+  Coded by: Spider Anongreyhat TheNooB & CamoCatX
   Team: TermuxHackz Society
   WhatsApp: +2349052863644 & +233245222358
   GitHub: spider863644
