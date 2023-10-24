@@ -104,7 +104,9 @@ def loop():
         print(resp.json())
     def paid():
         BASE_URL = "https://mpvr96.api.infobip.com"
+        BASE_URL = ""
         API_KEY = "2d86b648c363a5e6562e74e84a832fb4-ab0a6e77-7860-4b6f-95ea-aee61aab437f"
+        API_KEY = ""
         SENDER = input(Fore.GREEN + "Enter sender name: " + Fore.YELLOW)
         RECIPIENT = input(Fore.GREEN + "Enter target phone number with country code: " + Fore.YELLOW)
         MESSAGE_TEXT = input(Fore.GREEN + "Build your scam letter: " + Fore.YELLOW) 
