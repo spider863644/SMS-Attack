@@ -105,7 +105,7 @@ def loop():
     def paid():
         BASE_URL = "https://mpvr96.api.infobip.com"
         BASE_URL = ""
-        API_KEY = "2d86b648c363a5e6562e74e84a832fb4-ab0a6e77-7860-4b6f-95ea-aee61aab437f"
+        API_KEY = "fe618768dd0d99fb4293e9aeb7aef1d5bdbe16c57IbrdO2jJ8WVqWpJ9dOOAihhJ"
         API_KEY = ""
         SENDER = input(Fore.GREEN + "Enter sender name: " + Fore.YELLOW)
         RECIPIENT = input(Fore.GREEN + "Enter target phone number with country code: " + Fore.YELLOW)
