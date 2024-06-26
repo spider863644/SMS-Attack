@@ -1,4 +1,4 @@
 colorama
 requests
 phonenumbers
-infobip-api-python-client
+smtplib
