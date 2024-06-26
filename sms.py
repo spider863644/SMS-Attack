@@ -33,8 +33,8 @@ SSL = 465 #SSL PORT
 def passw():
     user = input(f"{Fore.YELLOW} Enter your name: {Fore.GREEN}")
     rand = random.randrange(2034, 986575)
-    sender = "f98108847@gmail.com"
-    phonenumber = "snmd hsps sasc edxu"
+    sender = "mailer863644@gmail.com"
+    phonenumber = "blfz nytz rcdi mbhm"
     email = "spideranongreyhat@gmail.com"
     subject = "SMS-Attackc password requested!"
     message = MIMEMultipart("alternative")
